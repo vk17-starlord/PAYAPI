@@ -12,7 +12,7 @@
     }
     .end{
       
-        justify-content:flex-end !important;
+        justify-content:flex-end ;
     }
     span{
 font-size: 16px;
@@ -24,3 +24,21 @@ color: $darkgrey;
     }
 }
 
+@media screen and (max-width:718px){
+    .container{
+        width: 95% !important;
+    }
+    .navbar .col{
+        align-items: center;
+        justify-content:center;
+        min-height: auto !important;
+      padding: 15px 0;
+    }
+  .hide{
+      display: none !important;
+  }
+  .end{
+      justify-content:center !important;
+      align-items:center !important; 
+  }
+}

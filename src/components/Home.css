@@ -56,6 +56,25 @@ body {
           flex-direction: column;
 }
 
+.hero-container .hero-txt p, .hero-container .hero-img p {
+  font-size: 16px;
+  width: 70%;
+  color: #36536B;
+  margin: 20px 0;
+  text-align: center;
+}
+
+.hero-container .hero-txt p span, .hero-container .hero-img p span {
+  font-size: 18px;
+  color: #36536B !important;
+}
+
+.hero-container .hero-img {
+  -webkit-box-align: center !important;
+      -ms-flex-align: center !important;
+          align-items: center !important;
+}
+
 .hero-container h4 {
   font-size: 62px;
   line-height: 110%;
@@ -66,7 +85,403 @@ body {
   width: 100%;
 }
 
-.hero-container .input {
+.hero-container::before {
+  width: 60vw;
+  height: 105vh;
+  background-position: right;
+  background-repeat: no-repeat;
+  z-index: -1;
+  background-image: url("./assets/bg-pattern-circle.svg");
+  top: -20vh;
+  right: -20vh;
+  content: '';
+  position: absolute;
+}
+
+.show-mob {
+  display: none !important;
+}
+
+.simple {
+  width: 100%;
+  min-height: 100vh;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+}
+
+.simple .s-col {
+  width: 50%;
+  min-height: 70vh;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+}
+
+.simple h4 {
+  width: 85%;
+  color: #36536B;
+  font-size: 52px;
+  font-family: "DM Serif Display", "Trebuchet MS", sans-serif;
+}
+
+.simple p {
+  font-size: 18px;
+  line-height: 150%;
+  font-weight: 300;
+  color: #918597;
+  width: 85%;
+}
+
+.simple .img {
+  background-repeat: no-repeat;
+  background-position: bottom left;
+  background-size: cover;
+  background-image: url("./assets/home/illustration-simple-ui.svg");
+}
+
+@media screen and (max-width: 718px) {
+  .feature {
+    margin-bottom: 5vh !important;
+  }
+  .scol {
+    padding: 20px;
+    -webkit-box-pack: center !important;
+        -ms-flex-pack: center !important;
+            justify-content: center !important;
+  }
+  .start h4 {
+    text-align: center;
+  }
+  .work-container .container .col h4, .work-container .container .col p {
+    width: 85% !important;
+    margin: 10px auto;
+  }
+  .work-container .container .col button {
+    margin-left: 15%;
+    width: -webkit-max-content;
+    width: -moz-max-content;
+    width: max-content;
+  }
+  body {
+    max-width: 100%;
+  }
+  .row {
+    margin-left: auto !important;
+    margin-right: auto !important;
+  }
+  .simple, .implement {
+    margin: 0 auto;
+    overflow: hidden !important;
+  }
+  .container {
+    margin: 0 auto !important;
+    width: 90%;
+    padding: 0 !important;
+  }
+  .simple .s-col {
+    width: 100%;
+    background-size: contain;
+    background-repeat: no-repeat !important;
+    min-height: auto;
+  }
+  .simple {
+    min-height: auto;
+  }
+  .simple .img {
+    min-height: 40vh;
+  }
+  .work-container::before {
+    display: none !important;
+  }
+  .simple {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: reverse;
+        -ms-flex-direction: column-reverse;
+            flex-direction: column-reverse;
+  }
+  .implement .i-col {
+    min-height: auto !important;
+    padding: 25px 0;
+  }
+  .implement .i-col .img {
+    background-size: contain !important;
+    background-repeat: no-repeat !important;
+    height: 25vh !important;
+  }
+  .hero-container .hero-txt p {
+    width: 100% !important;
+    margin-top: 0px !important;
+  }
+  .work-container .container .col {
+    min-height: auto !important;
+    padding: 25px 0px !important;
+  }
+  .work-container .container .col .row {
+    width: 100%;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -ms-flex-wrap: wrap;
+        flex-wrap: wrap;
+  }
+  .work-container .container .col .row > div {
+    width: 50%;
+  }
+  .hero-container::before {
+    display: none !important;
+  }
+  .show-mob {
+    display: -webkit-box !important;
+    display: -ms-flexbox !important;
+    display: flex !important;
+  }
+  .hide-mob {
+    display: none !important;
+  }
+  .hero-container .hero-txt, .hero-container .hero-img {
+    min-height: auto !important;
+  }
+  .hero-container .hero-img {
+    text-align: center;
+    -webkit-box-align: center !important;
+        -ms-flex-align: center !important;
+            align-items: center !important;
+    min-height: auto !important;
+  }
+  .hero-container .hero-img img {
+    position: relative;
+    margin-left: -20px;
+  }
+  .hero-container h4 {
+    text-align: center;
+    font-size: 30px;
+  }
+  .input {
+    width: 100% !important;
+    background-color: transparent !important;
+    -webkit-box-shadow: none !important;
+            box-shadow: none !important;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+  }
+  .input .btn {
+    margin: 20px auto;
+  }
+  .input input {
+    width: 100% !important;
+    -webkit-box-shadow: 0 2.1px 2.7px rgba(0, 0, 0, 0.019), 0 5.4px 6.9px rgba(0, 0, 0, 0.027), 0 11px 14.2px rgba(0, 0, 0, 0.033), 0 22.6px 29.2px rgba(0, 0, 0, 0.041), 0 62px 80px rgba(0, 0, 0, 0.06);
+            box-shadow: 0 2.1px 2.7px rgba(0, 0, 0, 0.019), 0 5.4px 6.9px rgba(0, 0, 0, 0.027), 0 11px 14.2px rgba(0, 0, 0, 0.033), 0 22.6px 29.2px rgba(0, 0, 0, 0.041), 0 62px 80px rgba(0, 0, 0, 0.06);
+  }
+}
+
+.work-container {
+  width: 100%;
+  min-height: 60vh;
+  background-color: #1B262F;
+  overflow: hidden;
+}
+
+.work-container::before {
+  width: 45vw;
+  min-height: 50vh;
+  background-image: url("./assets/bg-pattern-circle.svg");
+  content: '';
+  z-index: 1;
+  position: absolute;
+  left: 0;
+  -webkit-transform: rotate(180deg);
+          transform: rotate(180deg);
+  background-size: cover;
+  left: -20vh;
+}
+
+.work-container .comp {
+  min-height: 10vh;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  padding: 10px;
+}
+
+.work-container .comp img {
+  max-width: 100%;
+  max-height: 100%;
+}
+
+.work-container .container {
+  position: relative;
+  z-index: 2 !important;
+}
+
+.work-container .container .col {
+  min-height: 60vh;
+  color: white;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  padding: 0 25px;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: start;
+      -ms-flex-align: start;
+          align-items: flex-start;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+}
+
+.work-container .container .col button {
+  background-color: transparent;
+  font-size: 16px;
+  padding: 10px 25px;
+  border-radius: 25px;
+  border: 1px solid #918597;
+  color: white;
+  -webkit-transition: 1s ease-in-out;
+  transition: 1s ease-in-out;
+}
+
+.work-container .container .col button:hover {
+  background-color: #918597;
+}
+
+.work-container .container .col p {
+  width: 90%;
+  font-size: 16px;
+  line-height: 150%;
+  text-align: justify;
+  opacity: 0.8;
+  font-weight: 300;
+  margin-bottom: 20px;
+}
+
+.work-container .container .col h4 {
+  width: 90%;
+  font-size: 42px;
+  font-family: "DM Serif Display", "Trebuchet MS", sans-serif;
+}
+
+.implement {
+  margin: 5vh auto;
+}
+
+.implement .i-col {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  min-height: 70vh;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+}
+
+.implement .i-col .img {
+  background-image: url("./assets/home/illustration-easy-to-implement.svg");
+  width: 100%;
+  height: 50vh;
+  background-position: center;
+  background-size: cover;
+  -webkit-transform: scale(1.2, 1.2);
+          transform: scale(1.2, 1.2);
+}
+
+.implement .i-col h4 {
+  width: 85%;
+  color: #36536B;
+  font-size: 42px;
+  font-family: "DM Serif Display", "Trebuchet MS", sans-serif;
+}
+
+.implement .i-col p {
+  font-size: 18px;
+  line-height: 150%;
+  font-weight: 300;
+  color: #918597;
+  width: 85%;
+}
+
+.feature {
+  min-height: auto;
+  padding: 20px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: start;
+      -ms-flex-pack: start;
+          justify-content: flex-start;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  margin-bottom: 10vh;
+}
+
+.feature img {
+  max-width: 100%;
+  max-height: 100%;
+  margin-bottom: 5vh;
+}
+
+.feature p {
+  font-weight: 300;
+  text-align: center;
+  font-size: 16px;
+  color: #36536B;
+}
+
+.feature h4 {
+  margin-bottom: 25px;
+  font-size: 18px;
+  font-weight: 800;
+  color: #36536B;
+}
+
+.input {
   min-width: 85%;
   border-radius: 20px;
   display: -webkit-box;
@@ -83,38 +498,38 @@ body {
   background-color: #FBFCFE;
 }
 
-.hero-container .input input {
+.input input {
   width: 65%;
   border: none;
-  padding: 10px 20px;
+  padding: 15px 20px;
   border-radius: 20px;
 }
 
-.hero-container .input input:focus {
+.input input:focus {
   outline: none !important;
 }
 
-.hero-container .input input::-webkit-input-placeholder {
+.input input::-webkit-input-placeholder {
   color: #918597 !important;
   font-weight: 800;
 }
 
-.hero-container .input input:-ms-input-placeholder {
+.input input:-ms-input-placeholder {
   color: #918597 !important;
   font-weight: 800;
 }
 
-.hero-container .input input::-ms-input-placeholder {
+.input input::-ms-input-placeholder {
   color: #918597 !important;
   font-weight: 800;
 }
 
-.hero-container .input input::placeholder {
+.input input::placeholder {
   color: #918597 !important;
   font-weight: 800;
 }
 
-.hero-container .input button {
+.input button {
   -webkit-box-shadow: 0 2.1px 2.7px rgba(0, 0, 0, 0.019), 0 5.4px 6.9px rgba(0, 0, 0, 0.027), 0 11px 14.2px rgba(0, 0, 0, 0.033), 0 22.6px 29.2px rgba(0, 0, 0, 0.041), 0 62px 80px rgba(0, 0, 0, 0.06);
           box-shadow: 0 2.1px 2.7px rgba(0, 0, 0, 0.019), 0 5.4px 6.9px rgba(0, 0, 0, 0.027), 0 11px 14.2px rgba(0, 0, 0, 0.033), 0 22.6px 29.2px rgba(0, 0, 0, 0.041), 0 62px 80px rgba(0, 0, 0, 0.06);
   background-color: #c9668c;
@@ -122,24 +537,50 @@ body {
   background-color: #ba4270;
   color: white;
   font-size: 16px;
-  padding: 10px 20px;
+  padding: 15px 20px;
   border-radius: 25px;
   position: relative;
 }
 
-.hero-container .input button:hover {
+.input button:hover {
   background-color: #c9668c;
 }
 
-.hero-container::before {
-  width: 60vw;
-  height: 105vh;
-  background-position: right;
-  background-repeat: no-repeat;
-  z-index: -1;
-  background-image: url("./assets/bg-pattern-circle.svg");
-  top: -20vh;
-  right: -20vh;
-  content: '';
-  position: absolute;
+.start h4 {
+  padding: 0 !important;
+  margin: 20px 0 !important;
+  font-size: 48px;
+  color: #36536B;
+  font-weight: 800;
+  font-family: "DM Serif Display", "Trebuchet MS", sans-serif;
+}
+
+.start {
+  margin: 0 auto;
+}
+
+.scol {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: start;
+      -ms-flex-pack: start;
+          justify-content: flex-start;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  min-height: 20vh;
+}
+
+.scol:nth-child(2) {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: end;
+      -ms-flex-pack: end;
+          justify-content: flex-end;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  min-height: 20vh;
 }

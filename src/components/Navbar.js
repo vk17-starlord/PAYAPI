@@ -7,11 +7,11 @@ function Navbar() {
     return (
         <div className="navbar row">
       <div className="col-sm-12 col col-lg-2 col-md-3">
-      <img src={logo} alt="logo" />
-  
+  <Link to='/'>      <img src={logo} alt="logo" />
+</Link>
       </div>
       
-      <div className="col-sm-12 col col-lg-6 col-md-5">
+      <div className="col-sm-12 col col-lg-6 col-md-5  " >
      
      <Link to='/Pricing'><span>Pricing</span></Link>
      <Link to='/About'><span>About</span></Link>
@@ -19,8 +19,8 @@ function Navbar() {
      
       </div>
      
-      <div className="col-sm-12 col col-lg-4 col-md-4 end ">
-<button class='cta-btn' >Schedule a Demo</button>
+      <div className="col-sm-12 col col-lg-4 col-md-4 end  ">
+<Link to='/Contact'><button className='cta-btn' >Schedule a Demo</button></Link>
       </div>
 
         </div>
