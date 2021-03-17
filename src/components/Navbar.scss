@@ -1,0 +1,26 @@
+
+@import '../App.scss';
+.navbar{
+    width:100%;
+  
+    .col{
+        min-height: 15vh;
+        display: flex;
+        justify-content:flex-start;
+        align-items:center;
+
+    }
+    .end{
+      
+        justify-content:flex-end !important;
+    }
+    span{
+font-size: 16px;
+color: $darkgrey;
+        font-weight: 700;
+        font-family: $public-sans;
+        padding: 10px 20px;
+        margin: 0 5px;
+    }
+}
+

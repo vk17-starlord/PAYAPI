@@ -1,0 +1,37 @@
+$public-sans:'Public Sans', sans-serif;
+$DM-serif:'DM Serif Display', 'Trebuchet MS', sans-serif;;
+$verydarkblue:#1B262F;
+$darkblue:#36536B;
+$darkpink:#ba4270;
+$darkgrey:#918597;
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+body{
+    background-color: #EDF3F8;
+width: 100%;
+position: relative;
+font-family: $public-sans;
+overflow-x: hidden;
+max-width: 100% !important;
+}
+
+.cta-btn{
+    padding: 15px 20px;
+    border-radius: 30px;
+    background-color: $darkpink;
+    color: width;
+    color: white;
+    font-size: 16px;
+    border: none;
+    font-weight: 700;
+    font-family: $public-sans;
+}
+
+.container{
+    width: 75% !important;
+    margin: 0 auto;
+}
