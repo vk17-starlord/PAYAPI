@@ -114,7 +114,7 @@ Who we work with</h4>
 {
     features.map((feature) =>(
     <div className="col-sm-12 col-sm-4 feature">
-      <img src={feature.img} />  
+      <img src={feature.img} alt="alt"/>  
       <h4>{feature.heading}</h4>
       <p>{feature.para}</p>
      </div>))

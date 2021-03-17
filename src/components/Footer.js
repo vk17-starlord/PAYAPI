@@ -20,9 +20,9 @@ function Footer() {
      <Link to='/Contact'><span>Contact</span></Link>
 </div>
 <div className="col-sm-12 col-lg-6 col end">
-    <span><img src={facebook} /></span>
-    <span><img src={linkedin} /></span>
-    <span><img src={twitter} /></span>
+    <span><img alt="txt" src={facebook} /></span>
+    <span><img alt="txt" src={linkedin} /></span>
+    <span><img alt="txt" src={twitter} /></span>
 
 </div>
             
