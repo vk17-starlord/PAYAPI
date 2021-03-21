@@ -1,0 +1,106 @@
+@import '../App.scss';
+.priceing{
+width:100%;
+min-height: 100vh;
+h1{
+    width: 100%;
+    padding:0 10px;
+    color: $darkblue;
+ font-family:$DM-serif;
+    font-size: 48px;
+    margin: 5vh auto;
+    margin-top: 25px;
+}
+h4{
+    width: 90%;
+
+    color: $darkpink;
+    font-size: 40px;
+    margin: 25px 0;
+    font-family: $DM-serif;
+}
+.price-card{
+   display: flex;
+   justify-content: center;
+   align-items: flex-start;
+   flex-direction: column;
+   padding:10px;
+
+    #txt-p{
+        width: 90%;
+
+        font-size: 16px;
+        line-height: 150%;
+        font-weight: 300;
+        color:darken($color:  $darkgrey, $amount: 50);
+    }
+    .number{
+        font-size: 64px;
+        font-family: $DM-serif;
+        color: $darkblue;
+        margin: 25px 0;
+        padding-bottom: 20px;
+    
+    }
+    .txt{
+        width:90%;
+        padding-bottom: 25px;
+        border-bottom: 1px solid  $darkgrey;
+        margin-bottom: 25px;
+    }
+    .para{
+        width: 75%;
+        font-size: 16px;
+        padding:10px;
+        color: $darkgrey;
+        font-weight: 300;
+        margin: 0 auto;
+    }
+    .line{
+        position: relative;
+        width:100%;
+        margin: 20px 0;
+        border-bottom: 1px solid $darkblue;
+    }
+    #chk::before{
+        width: 18px;
+        background-image: url('./assets/icon-check.svg');
+        content:'';
+        position: absolute;
+        height:18px;
+        background-size: contain;
+        background-repeat: no-repeat;
+        background-position: center center;
+        margin-left: -10%;
+    }
+    #chk{
+        color: darken($color: $darkgrey, $amount:50);
+    }
+    h5{
+        color: $darkblue;
+      font-family: $public-sans;
+      font-size: 18px;
+      width: max-content;
+      text-align: center;
+      padding: 10px 20px;
+      border-radius: 20px;
+      border: 1px solid $darkblue;
+      &:hover{
+          text-decoration:none !important;
+          transition: 1s ease-in-out;
+          background-color: $darkblue;
+          color:white;
+      }
+    }
+    a{
+        transition: 1s ease-in-out;
+        text-decoration: none !important;
+    }
+}
+}
+
+@media screen and (max-width: 718px) {
+  .priceing  .container{
+        width:95% !important;
+    }
+}

@@ -104,7 +104,8 @@ body {
 
 .simple {
   width: 100%;
-  min-height: 100vh;
+  min-height: auto;
+  margin-bottom: 10vh;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -275,7 +276,7 @@ body {
   }
   .hero-container .hero-img img {
     position: relative;
-    margin-left: -20px;
+    margin-left: -50px;
   }
   .hero-container h4 {
     text-align: center;

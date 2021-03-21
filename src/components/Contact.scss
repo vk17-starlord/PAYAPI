@@ -1,0 +1,77 @@
+@import '../App.scss';
+.contact-container{
+ 
+    min-height: 80vh;
+
+    .heading{
+        font-family: $DM-serif;
+        font-size:52px;
+        color: $darkblue;
+    }
+    .companies{
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        flex-direction: column;
+        min-height: 80vh;
+        padding: 20px;
+
+    }
+    .filter{
+        margin: 20px auto;
+        max-height: 100%;
+        max-width: 100%;
+        filter: brightness(0) saturate(100%) invert(29%) sepia(33%) saturate(592%) hue-rotate(165deg) brightness(92%) contrast(90%);
+    }
+    .c-row{
+        width: 100%;
+
+    }
+h4{
+    margin: 20px auto;
+    font-family: $DM-serif;
+    font-size: 24px;
+    font-weight: 600;
+    color: $darkblue;
+}
+    input,textarea{
+        width:100%;
+        padding:10px;
+        background-color: transparent;
+        border: none;
+    
+        border-bottom: 1px solid $darkblue;
+    
+        &::placeholder{
+            color: $darkgrey;
+            font-size: 16px;
+            opacity:0.8;
+        }
+        margin: 10px auto;
+        &:focus{
+outline:none !important;
+        }
+    }
+}
+
+button{
+    padding: 10px 30px;background-color: transparent;
+border: 1px solid $darkblue;
+font-weight: 800;border-radius: 20px;
+margin:20px auto;
+transition:0.5s ease-in;
+&:hover{
+    background-color: $darkblue;
+    color: white;
+}
+}
+
+@media screen and (max-width: 718px) {
+    .c-row{
+        display: flex;
+        flex-wrap: wrap;
+    >div{
+        width: 50%;
+    }
+    }
+}

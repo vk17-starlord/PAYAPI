@@ -1,0 +1,126 @@
+* {
+  padding: 0;
+  margin: 0;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+}
+
+body {
+  background-color: #EDF3F8;
+  width: 100%;
+  position: relative;
+  font-family: "Public Sans", sans-serif;
+  overflow-x: hidden;
+  max-width: 100% !important;
+}
+
+.cta-btn {
+  padding: 15px 20px;
+  border-radius: 30px;
+  background-color: #ba4270;
+  color: width;
+  color: white;
+  font-size: 16px;
+  border: none;
+  font-weight: 700;
+  font-family: "Public Sans", sans-serif;
+}
+
+.container {
+  width: 75% !important;
+  margin: 0 auto;
+}
+
+.about-container {
+  min-height: 100vh;
+}
+
+.about-container .container {
+  padding: 0 !important;
+  margin-left: auto !important;
+  margin-right: auto !important;
+}
+
+.about-container h4 {
+  font-size: 42px;
+  margin: 0;
+  padding: 0 !important;
+  color: #36536B;
+  font-family: "DM Serif Display", "Trebuchet MS", sans-serif;
+}
+
+.about-container p {
+  color: #918597;
+  font-size: 16px;
+  font-weight: 300;
+  line-height: 150%;
+  padding: 0 10px;
+}
+
+.about-container h1 {
+  width: 100%;
+  font-size: 52px;
+  line-height: 125%;
+  color: #36536B;
+  font-family: "DM Serif Display", "Trebuchet MS", sans-serif;
+}
+
+.about-container .col {
+  padding: 10px 0 !important;
+  margin: 25px auto;
+}
+
+.about-container .img-container {
+  background-size: cover;
+  width: 100%;
+  background-image: url("./assets/about/desktop/image-team-members.jpg");
+  margin: 5vh auto;
+  min-height: 60vh;
+}
+
+.about-container .img-container::before {
+  width: 25vw;
+  height: 85vh;
+  content: '';
+  position: absolute;
+  z-index: -1;
+  margin-top: -10vh;
+  left: 0;
+  background-size: cover;
+  -webkit-transform: rotate(180deg);
+          transform: rotate(180deg);
+  background-image: url("./assets/bg-pattern-circle.svg");
+}
+
+.members {
+  padding: 20px 0;
+}
+
+.members > div {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+}
+
+.members > div h5 {
+  color: #36536B;
+  font-weight: 300;
+  font-size: 20px;
+  margin: 20px auto;
+}
+
+.members > div span {
+  color: #ba4270;
+  font-family: "DM Serif Display", "Trebuchet MS", sans-serif;
+  font-size: 62px;
+}

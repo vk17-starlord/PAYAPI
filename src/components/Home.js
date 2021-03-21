@@ -120,19 +120,7 @@ Who we work with</h4>
      </div>))
 }
 </div>
-<div className="container start row">
-<div className="col-sm-12 col-sm-6 scol">
-<h4>Ready to start?</h4>
-</div>
-<div className="col-sm-12 col-sm-6 scol">
-<div className='input'>
-    <input type='text' placeholder='Enter Email Address'/>
-    <Link to='/Contacts'>    <button className='btn'>Schedule a Demo</button></Link>
-   
-        </div>
-</div>
 
-</div>
         </div>
     )
 }

@@ -60,7 +60,8 @@ span{
 
 .simple{
   width: 100%;
-  min-height: 100vh;
+  min-height: auto;
+  margin-bottom: 10vh;
 
   display: flex;
   justify-content: center;
@@ -69,8 +70,7 @@ span{
   flex-wrap: wrap;
   .s-col{
  width: 50%;
- min-height: 70vh;
- 
+ min-height:70vh;
  display: flex;
  justify-content: center;
  align-items: center;
@@ -195,7 +195,7 @@ flex-wrap: wrap;
    text-align: center;
    img{
      position: relative;
-     margin-left: -20px;
+     margin-left: -50px;
    }
    align-items: center !important;
     min-height: auto !important;
