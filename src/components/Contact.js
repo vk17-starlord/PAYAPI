@@ -35,7 +35,7 @@ function Contact() {
           <div className="row c-row">
             {companies.map((company)=>(
                 <div className="col-sm-6 col-sm-4">
-                    <img src={company} className="filter" />
+                    <img src={company} alt="img" className="filter" />
                 </div>
             ))}
           </div>
