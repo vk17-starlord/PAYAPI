@@ -35,6 +35,22 @@ body {
   min-height: 80vh;
 }
 
+.contact-container button {
+  padding: 10px 30px;
+  background-color: transparent;
+  border: 1px solid #36536B;
+  font-weight: 800;
+  border-radius: 20px;
+  margin: 20px auto;
+  -webkit-transition: 0.5s ease-in;
+  transition: 0.5s ease-in;
+}
+
+.contact-container button:hover {
+  background-color: #36536B;
+  color: white;
+}
+
 .contact-container .heading {
   font-family: "DM Serif Display", "Trebuchet MS", sans-serif;
   font-size: 52px;
@@ -114,22 +130,6 @@ body {
 
 .contact-container input:focus, .contact-container textarea:focus {
   outline: none !important;
-}
-
-button {
-  padding: 10px 30px;
-  background-color: transparent;
-  border: 1px solid #36536B;
-  font-weight: 800;
-  border-radius: 20px;
-  margin: 20px auto;
-  -webkit-transition: 0.5s ease-in;
-  transition: 0.5s ease-in;
-}
-
-button:hover {
-  background-color: #36536B;
-  color: white;
 }
 
 @media screen and (max-width: 718px) {
